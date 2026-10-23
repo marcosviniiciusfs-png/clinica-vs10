@@ -14,5 +14,16 @@ document.addEventListener('click', (event) => {
   };
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push(payload);
+  // Dispatch when a configured Meta pixel is present. No placeholder pixel is loaded.
+  if (typeof window.fbq === 'function') {
+    window.fbq('trackCustom', 'WhatsAppClick', {
+      procedure: payload.procedure,
+      placement: payload.placement,
+      utm_source: payload.utm_source,
+      utm_medium: payload.utm_medium,
+      utm_campaign: payload.utm_campaign,
+      utm_content: payload.utm_content,
+    });
+  }
   window.dispatchEvent(new CustomEvent('vs10:whatsapp-click', { detail: payload }));
 });
