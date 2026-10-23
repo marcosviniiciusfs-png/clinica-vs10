@@ -1,0 +1,12 @@
+Ready-made icons. Original vector geometry retained.
+Health Icons (MIT): https://github.com/resolvetosavelives/healthicons
+odontology-implant-outline
+mouth-outline
+syringe-outline
+tooth-outline
+dental-hygiene-outline
+Tabler Icons (MIT): https://github.com/tabler/tabler-icons
+dental-broken
+Distributed through https://github.com/iconify/icon-sets
+IconPark (Apache 2.0): https://github.com/bytedance/IconPark
+teeth (orthodontics)
